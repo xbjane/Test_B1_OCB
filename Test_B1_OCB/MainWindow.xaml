@@ -1,0 +1,22 @@
+﻿<Window x:Class="Test_B1_OCB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_B1_OCB"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="370" Width="420">
+    <Grid>
+        <Border Background="Azure" Margin="15" MinWidth="350" MaxWidth="400" MinHeight="350" MaxHeight="400"  VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="15">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="AliceBlue" ShadowDepth="1"/>
+            </Border.Effect>
+            <StackPanel Height="313" Width="313">
+                <Button Content="Load Excel file"  Margin="0 90 0 10" FontSize="18" Width="172"  Background="#FFAFD5F4" BorderBrush="#FF7DB2F4" Click="LoadExcelFileButtonClick" />
+                <Button Content="View files information" Margin="0 20 0 10" FontSize="18" Width="190" Background="#FFAFD5F4" BorderBrush="#FF7DB2F4" Click="ViewFileInformationButtonClick" />
+            </StackPanel>
+        </Border>
+        <Button Content="Exit" FontSize="20" HorizontalAlignment="Left" Margin="329,10,0,0" VerticalAlignment="Top" Width="56" Height="38" Background="#FFAFD5F4" BorderBrush="#FF7DB2F4" Click="ExitButton_Click"/>
+    </Grid>
+</Window>
